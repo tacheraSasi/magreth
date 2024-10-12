@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 import { LogoGoogle, MessageIcon, VercelIcon } from "./icons";
+import Image from "next/image";
 
 export const Overview = () => {
   return (
@@ -15,31 +16,31 @@ export const Overview = () => {
     >
       <div className="border-none bg-muted/50 rounded-2xl p-6 flex flex-col gap-4 text-zinc-500 text-sm dark:text-zinc-400 dark:border-zinc-700">
         <p className="flex flex-row justify-center gap-4 items-center text-zinc-900 dark:text-zinc-50">
-          <VercelIcon />
+          <Image
+            src="/images/magreth.png"
+            height={20}
+            width={20}
+            alt="magreth-ekilie"
+          />
           <span>+</span>
           <MessageIcon />
         </p>
         <p>
-          This is an open source Chatbot template powered by the Google Gemini
-          model built with Next.js and the AI SDK by Vercel. It uses the{" "}
-          <code className="rounded-sm bg-muted-foreground/15 px-1.5 py-0.5">
-            streamText
-          </code>{" "}
-          function in the server and the{" "}
-          <code className="rounded-sm bg-muted-foreground/15 px-1.5 py-0.5">
-            useChat
-          </code>{" "}
-          hook on the client to create a seamless chat experience.
+          Meet Magreth, your fun and supportive AI therapist! 🌟 She’s here to help you explore 
+          your feelings and assist with flight bookings effortlessly. ✈️
         </p>
         <p>
-          {" "}
-          You can learn more about the AI SDK by visiting the{" "}
+          Powered by the Google Gemini model, Magreth ensures a seamless chat experience tailored 
+          to your needs.
+        </p>
+        <p>
+          Created by Tachera Sasi at ekilie. Learn more at{" "}
           <Link
-            className="text-blue-500 dark:text-blue-400"
-            href="https://sdk.vercel.ai/docs"
+            className="text-green-500 dark:text-green-400"
+            href="https://ekilie.com"
             target="_blank"
           >
-            Docs
+            ekilie.com
           </Link>
           .
         </p>

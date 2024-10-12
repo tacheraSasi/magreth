@@ -20,16 +20,17 @@ import { Textarea } from "../ui/textarea";
 
 const suggestedActions = [
   {
-    title: "Help me book a flight",
-    label: "from San Francisco to London",
-    action: "help me book a flight from San Francisco to London",
+    title: "Mood Mood, What's the Good Mood?",
+    label: "Help me color my day bright!",
+    action: "Magreth, let’s chat about my mood today!",
   },
   {
-    title: "What is the status",
-    label: "of flight BA142 flying tmrw?",
-    action: "what is the status of flight BA142 flying tmrw?",
+    title: "✨ Sparkle Some Self-Love",
+    label: "Time to sprinkle some joy on my thoughts!",
+    action: "Magreth, can you help me boost my self-love vibes?",
   },
 ];
+
 
 export function MultimodalInput({
   input,
@@ -250,7 +251,7 @@ export function MultimodalInput({
         </Button>
       )}
 
-      <Button
+      {/* <Button
         className="rounded-full p-1.5 h-fit absolute bottom-2 right-10 m-0.5 dark:border-zinc-700"
         onClick={(event) => {
           event.preventDefault();
@@ -260,7 +261,7 @@ export function MultimodalInput({
         disabled={isLoading}
       >
         <PaperclipIcon size={14} />
-      </Button>
+      </Button> */}
     </div>
   );
 }

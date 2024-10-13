@@ -21,8 +21,8 @@ export async function getUser(email: string): Promise<Array<User>> {
     throw error;
   }
 }
-
-export async function createUser(name:string ,email: string, password: string) {
+//I will remove the undefined later this is a temporary fix
+export async function createUser(name:string | undefined ,email: string, password: string) {
   let salt = genSaltSync(10);
   let hash = hashSync(password, salt);
 

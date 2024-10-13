@@ -14,7 +14,7 @@ import { register, RegisterActionState } from "../actions";
 export default function Page() {
   const router = useRouter();
   const relayApiKey:string = `${process.env.EKILIRELAY}`;
-  const mailer = new EkiliRelay(relayApiKey)
+  const mailer = new EkiliRelay("relay-6087f8c42d70f0650b9f023adc")
 
   const [email, setEmail] = useState("");
   const [state, formAction] = useActionState<RegisterActionState, FormData>(

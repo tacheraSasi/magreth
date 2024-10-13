@@ -4,7 +4,7 @@ import { Attachment, ToolInvocation } from "ai";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
-import { BotIcon, UserIcon } from "./icons";
+import { BotIcon, MagrethIcon, UserIcon } from "./icons";
 import { Markdown } from "./markdown";
 import { PreviewAttachment } from "./preview-attachment";
 import { Weather } from "./weather";
@@ -33,15 +33,17 @@ export const Message = ({
       initial={{ y: 5, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
     >
-      <div className="size-[24px] border rounded-sm p-1 flex flex-col justify-center items-center flex-shrink-0 text-zinc-500">
-        {role === "assistant" ? <BotIcon /> : <UserIcon />}
+      <div className="size-[30px] border rounded-sm p-1 flex flex-col justify-center items-center flex-shrink-0 text-zinc-500">
+        {role === "assistant" ? <MagrethIcon /> : <UserIcon />}
       </div>
 
       <div className="flex flex-col gap-2 w-full">
-        {content && typeof content === "string" && (
+        {content && typeof content === "string" ? (
           <div className="text-zinc-800 dark:text-zinc-300 flex flex-col gap-4">
             <Markdown>{content}</Markdown>
           </div>
+        ) : (
+          <p>typing...</p>
         )}
 
         {toolInvocations && (

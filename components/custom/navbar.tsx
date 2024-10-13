@@ -13,9 +13,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
+import { LogOut, UserRound } from "lucide-react";
 
 export const Navbar = async () => {
   let session = await auth();
+  // console.log(session)
 
   return (
     <>
@@ -33,7 +35,7 @@ export const Navbar = async () => {
               <SlashIcon size={16} />
             </div>
             <div className="text-sm dark:text-zinc-300 truncate w-28 md:w-fit">
-              Magreth - Your AI Therapist
+              Magreth - Your AI Friend
             </div>
           </div>
         </div>
@@ -42,10 +44,10 @@ export const Navbar = async () => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
-                className="py-1.5 px-2 h-fit font-normal"
+                className="py-1.5 px-2 h-fit font-normal flex items-center gap-2"
                 variant="secondary"
-              >
-                {session.user?.email}
+              > <UserRound size={20}/>
+                {session.user?.name}
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
@@ -65,8 +67,9 @@ export const Navbar = async () => {
                 >
                   <button
                     type="submit"
-                    className="w-full text-left px-1 py-0.5 text-red-500"
+                    className="w-full text-left px-1 py-0.5 text-red-500 flex gap-2 items-center"
                   >
+                    <LogOut size={20}/>
                     Sign out
                   </button>
                 </form>

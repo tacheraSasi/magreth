@@ -25,6 +25,7 @@ export default function Page() {
   );
 
   useEffect(() => {
+    // console.log(state)
     if (state.status === "user_exists") {
       toast.error("Account already exists");
     } else if (state.status === "failed") {
@@ -38,10 +39,44 @@ export default function Page() {
     }
   }, [state, router]);
 
-  const sendEmailNotification = (email:string) =>{
-    console.log(email)
+  const sendEmailNotification = (email:string) => {
+      console.log(`Sending email to: ${email}`);
 
-  }
+      const subject = "🌟 You're Now Friends with Magreth! 🎉";
+      const message = `
+          <div style="font-family: Arial, sans-serif; padding: 20px; border: 1px solid #007bff; border-radius: 5px; background-color: #f8f9fa;">
+              <h1 style="color: #007bff;">Hello there!</h1>
+              <p style="font-size: 16px;">Thank you for joining our little community! 🎈</p>
+              <p style="font-size: 16px;">I’m Magreth, your AI friend and therapist, and I'm here to support you on your journey. Whether you need advice, a listening ear, or just someone to share your thoughts with, I'm just an email away!</p>
+              <p style="font-size: 16px;">Here are a few things you can do with me:</p>
+              <ul style="font-size: 16px;">
+                  <li>🧠 Share your thoughts and feelings anytime.</li>
+                  <li>💬 Ask for advice on various topics.</li>
+                  <li>Join me in some fun activities and challenges!</li>
+              </ul>
+              <p style="font-size: 16px;">I'm excited to embark on this journey with you. Let's make great memories together!</p>
+              <p style="font-size: 16px;">Best Wishes,<br>Magreth 🤗</p>
+          </div>
+      `;
+
+      mailer.sendEmail(
+          email, 
+          subject, 
+          message, 
+          'From: Magreth <support@ekilie.com>' 
+      )
+      .then(response => {
+          if (response.status === 'success') {
+              console.log('Email sent successfully.');
+          } else {
+              console.log('Failed to send email: ' + response.message);
+          }
+      })
+      .catch(error => {
+          console.log('Error:', error);
+      });
+  };
+
 
   const handleSubmit = (formData: FormData) => {
     setEmail(formData.get("email") as string);
@@ -57,7 +92,7 @@ export default function Page() {
             Create an account with your email and password
           </p>
         </div>
-        <AuthForm action={handleSubmit} defaultEmail={email}>
+        <AuthForm action={handleSubmit} defaultEmail={email} isRegister={true}>
           <SubmitButton>Sign Up</SubmitButton>
           <p className="text-center text-sm text-gray-600 mt-4 dark:text-zinc-400">
             {"Already have an account? "}

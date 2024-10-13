@@ -1,0 +1,23 @@
+{
+    "name": "Magreth",
+    "short_name": "Magreth",
+    "description": "Your AI therapist and friend.",
+    "lang": "en",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#00000080",  
+    "theme_color": "#00000080",       
+    "icons": [
+      {
+        "src": "/images/magreth.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/magreth.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  

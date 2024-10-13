@@ -1,0 +1,67 @@
+"filename", "language", "TypeScript", "TypeScript JSX", "CSS", "JavaScript", "JSON with Comments", "JSON", "MS SQL", "YAML", "Markdown", "comment", "blank", "total"
+"/home/tach/tach/nextjs/magreth/.eslintrc.json", "JSON", 0, 0, 0, 0, 0, 37, 0, 0, 0, 0, 1, 38
+"/home/tach/tach/nextjs/magreth/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 0, 0, 46, 0, 16, 62
+"/home/tach/tach/nextjs/magreth/ai/actions.ts", "TypeScript", 125, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 135
+"/home/tach/tach/nextjs/magreth/ai/custom-middleware.ts", "TypeScript", 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 4
+"/home/tach/tach/nextjs/magreth/ai/index.ts", "TypeScript", 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 15
+"/home/tach/tach/nextjs/magreth/app/(auth)/actions.ts", "TypeScript", 70, 0, 0, 0, 0, 0, 0, 0, 0, 0, 16, 86
+"/home/tach/tach/nextjs/magreth/app/(auth)/api/auth/[...nextauth]/route.ts", "TypeScript", 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 2
+"/home/tach/tach/nextjs/magreth/app/(auth)/auth.config.ts", "TypeScript", 31, 0, 0, 0, 0, 0, 0, 0, 0, 2, 7, 40
+"/home/tach/tach/nextjs/magreth/app/(auth)/auth.ts", "TypeScript", 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 54
+"/home/tach/tach/nextjs/magreth/app/(auth)/login/page.tsx", "TypeScript JSX", 0, 56, 0, 0, 0, 0, 0, 0, 0, 0, 10, 66
+"/home/tach/tach/nextjs/magreth/app/(auth)/register/page.tsx", "TypeScript JSX", 0, 66, 0, 0, 0, 0, 0, 0, 0, 0, 11, 77
+"/home/tach/tach/nextjs/magreth/app/(chat)/api/chat/route.ts", "TypeScript", 243, 0, 0, 0, 0, 0, 0, 0, 0, 0, 23, 266
+"/home/tach/tach/nextjs/magreth/app/(chat)/api/files/upload/route.ts", "TypeScript", 56, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 70
+"/home/tach/tach/nextjs/magreth/app/(chat)/api/history/route.ts", "TypeScript", 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 14
+"/home/tach/tach/nextjs/magreth/app/(chat)/api/reservation/route.ts", "TypeScript", 61, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 80
+"/home/tach/tach/nextjs/magreth/app/(chat)/chat/[id]/page.tsx", "TypeScript JSX", 0, 95, 0, 0, 0, 0, 0, 0, 0, 1, 18, 114
+"/home/tach/tach/nextjs/magreth/app/(chat)/page.tsx", "TypeScript JSX", 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 2, 8
+"/home/tach/tach/nextjs/magreth/app/globals.css", "CSS", 0, 0, 110, 0, 0, 0, 0, 0, 0, 0, 12, 122
+"/home/tach/tach/nextjs/magreth/app/layout.tsx", "TypeScript JSX", 0, 65, 0, 0, 0, 0, 0, 0, 0, 0, 5, 70
+"/home/tach/tach/nextjs/magreth/components.json", "JSON", 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 1, 21
+"/home/tach/tach/nextjs/magreth/components/custom/auth-form.tsx", "TypeScript JSX", 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 6, 54
+"/home/tach/tach/nextjs/magreth/components/custom/chat.tsx", "TypeScript JSX", 0, 66, 0, 0, 0, 0, 0, 0, 0, 0, 10, 76
+"/home/tach/tach/nextjs/magreth/components/custom/history.tsx", "TypeScript JSX", 0, 220, 0, 0, 0, 0, 0, 0, 0, 0, 22, 242
+"/home/tach/tach/nextjs/magreth/components/custom/icons.tsx", "TypeScript JSX", 0, 672, 0, 0, 0, 0, 0, 0, 0, 0, 33, 705
+"/home/tach/tach/nextjs/magreth/components/custom/markdown.tsx", "TypeScript JSX", 0, 75, 0, 0, 0, 0, 0, 0, 0, 0, 4, 79
+"/home/tach/tach/nextjs/magreth/components/custom/message.tsx", "TypeScript JSX", 0, 107, 0, 0, 0, 0, 0, 0, 0, 0, 9, 116
+"/home/tach/tach/nextjs/magreth/components/custom/multimodal-input.tsx", "TypeScript JSX", 0, 229, 0, 0, 0, 0, 0, 0, 0, 11, 28, 268
+"/home/tach/tach/nextjs/magreth/components/custom/navbar.tsx", "TypeScript JSX", 0, 78, 0, 0, 0, 0, 0, 0, 0, 0, 7, 85
+"/home/tach/tach/nextjs/magreth/components/custom/overview.tsx", "TypeScript JSX", 0, 48, 0, 0, 0, 0, 0, 0, 0, 0, 3, 51
+"/home/tach/tach/nextjs/magreth/components/custom/preview-attachment.tsx", "TypeScript JSX", 0, 37, 0, 0, 0, 0, 0, 0, 0, 2, 6, 45
+"/home/tach/tach/nextjs/magreth/components/custom/submit-button.tsx", "TypeScript JSX", 0, 24, 0, 0, 0, 0, 0, 0, 0, 0, 6, 30
+"/home/tach/tach/nextjs/magreth/components/custom/theme-provider.tsx", "TypeScript JSX", 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 3, 10
+"/home/tach/tach/nextjs/magreth/components/custom/theme-toggle.tsx", "TypeScript JSX", 0, 23, 0, 0, 0, 0, 0, 0, 0, 0, 6, 29
+"/home/tach/tach/nextjs/magreth/components/custom/use-scroll-to-bottom.ts", "TypeScript", 23, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 30
+"/home/tach/tach/nextjs/magreth/components/custom/weather.tsx", "TypeScript JSX", 0, 290, 0, 0, 0, 0, 0, 0, 0, 2, 16, 308
+"/home/tach/tach/nextjs/magreth/components/flights/authorize-payment.tsx", "TypeScript JSX", 0, 84, 0, 0, 0, 0, 0, 0, 0, 0, 11, 95
+"/home/tach/tach/nextjs/magreth/components/flights/boarding-pass.tsx", "TypeScript JSX", 0, 78, 0, 0, 0, 0, 0, 0, 0, 0, 9, 87
+"/home/tach/tach/nextjs/magreth/components/flights/create-reservation.tsx", "TypeScript JSX", 0, 64, 0, 0, 0, 0, 0, 0, 0, 0, 6, 70
+"/home/tach/tach/nextjs/magreth/components/flights/flight-status.tsx", "TypeScript JSX", 0, 90, 0, 0, 0, 0, 0, 0, 0, 0, 11, 101
+"/home/tach/tach/nextjs/magreth/components/flights/list-flights.tsx", "TypeScript JSX", 0, 126, 0, 0, 0, 0, 0, 0, 0, 0, 5, 131
+"/home/tach/tach/nextjs/magreth/components/flights/select-seats.tsx", "TypeScript JSX", 0, 118, 0, 0, 0, 0, 0, 0, 0, 0, 6, 124
+"/home/tach/tach/nextjs/magreth/components/flights/verify-payment.tsx", "TypeScript JSX", 0, 15, 0, 0, 0, 0, 0, 0, 0, 0, 1, 16
+"/home/tach/tach/nextjs/magreth/components/ui/alert-dialog.tsx", "TypeScript JSX", 0, 127, 0, 0, 0, 0, 0, 0, 0, 0, 15, 142
+"/home/tach/tach/nextjs/magreth/components/ui/button.tsx", "TypeScript JSX", 0, 51, 0, 0, 0, 0, 0, 0, 0, 0, 6, 57
+"/home/tach/tach/nextjs/magreth/components/ui/dropdown-menu.tsx", "TypeScript JSX", 0, 182, 0, 0, 0, 0, 0, 0, 0, 0, 19, 201
+"/home/tach/tach/nextjs/magreth/components/ui/input.tsx", "TypeScript JSX", 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 5, 26
+"/home/tach/tach/nextjs/magreth/components/ui/label.tsx", "TypeScript JSX", 0, 21, 0, 0, 0, 0, 0, 0, 0, 0, 6, 27
+"/home/tach/tach/nextjs/magreth/components/ui/sheet.tsx", "TypeScript JSX", 0, 125, 0, 0, 0, 0, 0, 0, 0, 0, 16, 141
+"/home/tach/tach/nextjs/magreth/components/ui/textarea.tsx", "TypeScript JSX", 0, 20, 0, 0, 0, 0, 0, 0, 0, 0, 5, 25
+"/home/tach/tach/nextjs/magreth/db/migrate.ts", "TypeScript", 25, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 33
+"/home/tach/tach/nextjs/magreth/db/queries.ts", "TypeScript", 123, 0, 0, 0, 0, 0, 0, 0, 0, 3, 17, 143
+"/home/tach/tach/nextjs/magreth/db/schema.ts", "TypeScript", 37, 0, 0, 0, 0, 0, 0, 0, 0, 1, 7, 45
+"/home/tach/tach/nextjs/magreth/drizzle.config.ts", "TypeScript", 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 16
+"/home/tach/tach/nextjs/magreth/lib/drizzle/0000_absurd_joshua_kane.sql", "MS SQL", 0, 0, 0, 0, 0, 0, 28, 0, 0, 4, 1, 33
+"/home/tach/tach/nextjs/magreth/lib/drizzle/meta/0000_snapshot.json", "JSON", 0, 0, 0, 0, 0, 150, 0, 0, 0, 0, 0, 150
+"/home/tach/tach/nextjs/magreth/lib/drizzle/meta/_journal.json", "JSON", 0, 0, 0, 0, 0, 13, 0, 0, 0, 0, 0, 13
+"/home/tach/tach/nextjs/magreth/lib/utils.ts", "TypeScript", 34, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 44
+"/home/tach/tach/nextjs/magreth/middleware.ts", "TypeScript", 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 10
+"/home/tach/tach/nextjs/magreth/next-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 2, 6
+"/home/tach/tach/nextjs/magreth/next.config.mjs", "JavaScript", 0, 0, 0, 7, 0, 0, 0, 0, 0, 1, 2, 10
+"/home/tach/tach/nextjs/magreth/package.json", "JSON", 0, 0, 0, 0, 0, 69, 0, 0, 0, 0, 1, 70
+"/home/tach/tach/nextjs/magreth/pnpm-lock.yaml", "YAML", 0, 0, 0, 0, 0, 0, 0, 5775, 0, 0, 1434, 7209
+"/home/tach/tach/nextjs/magreth/postcss.config.mjs", "JavaScript", 0, 0, 0, 6, 0, 0, 0, 0, 0, 1, 2, 9
+"/home/tach/tach/nextjs/magreth/tailwind.config.ts", "TypeScript", 67, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 69
+"/home/tach/tach/nextjs/magreth/tsconfig.json", "JSON with Comments", 0, 0, 0, 0, 27, 0, 0, 0, 0, 0, 1, 28
+"Total", "-", 985, 3334, 110, 13, 27, 289, 28, 5775, 46, 32, 1964, 12603

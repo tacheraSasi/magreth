@@ -5,14 +5,38 @@ export function AuthForm({
   action,
   children,
   defaultEmail = "",
+  isRegister = false
 }: {
   action: any;
   children: React.ReactNode;
   defaultEmail?: string;
+  isRegister?: boolean;
 }) {
   return (
     <form action={action} className="flex flex-col gap-4 px-4 sm:px-16">
       <div className="flex flex-col gap-2">
+        {isRegister &&
+        <>
+          <Label
+            htmlFor="name"
+            className="text-zinc-600 font-normal dark:text-zinc-400"
+          >
+            Your name
+          </Label>
+
+          <Input
+            id="name"
+            name="name"
+            className="bg-muted text-md md:text-sm border-none"
+            type="name"
+            placeholder="Tachera Sasi"
+            autoComplete="name"
+            required
+          />
+        </>
+        
+        }
+
         <Label
           htmlFor="email"
           className="text-zinc-600 font-normal dark:text-zinc-400"

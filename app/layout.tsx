@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/custom/theme-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://magreth.vercel.app/"),
+  metadataBase: new URL("https://magreth.ekilie.com/"),
   title: "Magreth - Your Friendly AI Therapist for Mental Wellness",
   description:
     "Meet Magreth, your AI therapist! Experience friendly conversations that help you explore your emotions, boost your mood, and enhance your mental well-being. Discover a unique blend of empathy and support powered by cutting-edge AI technology.",
@@ -22,12 +22,13 @@ export const metadata: Metadata = {
     "Magreth",
     "ekilie",
     "Magreth ai",
+    "ekilie ai",
   ],
   openGraph: {
-    title: "Magreth - Your Friendly AI Therapist for Mental Wellness",
+    title: "Magreth - Your Friendly AI Therapist And Friend",
     description:
       "Meet Magreth, your AI therapist! Experience friendly conversations that help you explore your emotions, boost your mood, and enhance your mental well-being. Discover a unique blend of empathy and support powered by cutting-edge AI technology.",
-    url: "https://magreth.vercel.app/",
+    url: "https://magreth.ekilie.com/",
     siteName: "Magreth",
     type: "website",
     images: [

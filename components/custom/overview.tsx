@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-import { LogoGoogle, MessageIcon, VercelIcon } from "./icons";
+import { MessageIcon } from "./icons";
 import Image from "next/image";
 
 export const Overview = () => {
@@ -23,14 +23,14 @@ export const Overview = () => {
             alt="magreth-ekilie"
           />
           <span>+</span>
-          <MessageIcon />
+          <MessageIcon size={20}/>
         </p>
         <p>
           Meet Magreth, your fun and supportive AI therapist! 🌟 She’s here to help you explore 
-          your feelings and assist with flight bookings effortlessly. ✈️
+          your feelings.
         </p>
         <p>
-          Powered by the Google Gemini model, Magreth ensures a seamless chat experience tailored 
+          Powered by the ekilie, Magreth ensures a seamless chat experience tailored 
           to your needs.
         </p>
         <p>

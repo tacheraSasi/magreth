@@ -25,12 +25,14 @@ export const Navbar = async () => {
         <div className="flex flex-row gap-3 items-center">
           <History user={session?.user} />
           <div className="flex flex-row gap-2 items-center">
-            <Image
-              src="/images/magreth.png"
-              height={20}
-              width={20}
-              alt="gemini logo"
-            />
+            <Link href="/">
+              <Image
+                src="/images/magreth.png"
+                height={20}
+                width={20}
+                alt="gemini logo"
+              />
+            </Link>
             <div className="text-zinc-500">
               <SlashIcon size={16} />
             </div>

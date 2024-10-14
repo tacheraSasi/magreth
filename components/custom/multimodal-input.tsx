@@ -17,6 +17,7 @@ import { ArrowUpIcon, PaperclipIcon, StopIcon } from "./icons";
 import { PreviewAttachment } from "./preview-attachment";
 import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
+import { playSound, vibrate } from "@/lib/utils";
 
 const suggestedActions = [
   {
@@ -244,6 +245,8 @@ export function MultimodalInput({
           className="rounded-full  p-1.5 h-fit absolute bottom-2 right-2 m-0.5 text-white"
           onClick={(event) => {
             handleSubmit(event);
+            vibrate(100);
+            playSound("/sounds/out.mp3") //playing the message outgoing sound
           }}
           disabled={input.length === 0 || uploadQueue.length > 0}
         >

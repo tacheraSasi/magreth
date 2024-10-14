@@ -41,3 +41,21 @@ export function generateUUID(): string {
     return v.toString(16);
   });
 }
+
+export function playSound(audioPath:string,soundType:string=""){
+  const sound = new Audio(audioPath)
+
+  sound.play().catch((error) => {
+    console.error("Error playing sound:", error);
+  });
+  console.log("sound played")
+
+}
+
+export function vibrate(length:number) {
+  if ('vibrate' in navigator) {
+    navigator.vibrate(length);
+  } else {
+    console.log("Vibration not supported on this device.");
+  }
+}

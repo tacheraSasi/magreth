@@ -3,12 +3,12 @@ import { Toaster } from "sonner";
 
 import { Navbar } from "@/components/custom/navbar";
 import { ThemeProvider } from "@/components/custom/theme-provider";
-
+import NextTopLoader from 'nextjs-toploader';
 import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://magreth.ekilie.com/"),
-  title: "Magreth - Your Friendly AI Therapist for Mental Wellness",
+  title: "Magreth - Your Friendly AI Therapist And Friend",
   description:
     "Meet Magreth, your AI therapist! Experience friendly conversations that help you explore your emotions, boost your mood, and enhance your mental well-being. Discover a unique blend of empathy and support powered by cutting-edge AI technology.",
   keywords: [
@@ -62,6 +62,7 @@ export default async function RootLayout({
           disableTransitionOnChange
         >
           <Toaster position="top-center" />
+          <NextTopLoader color="#74f5a1" showSpinner={false}/>
           <Navbar />
           {children}
         </ThemeProvider>

@@ -16,7 +16,7 @@ import {
   getReservationById,
   saveChat,
 } from "@/db/queries";
-import { generateUUID } from "@/lib/utils";
+import { generateUUID, getCurrentDateTime } from "@/lib/utils";
 
 export async function POST(request: Request) {
   const { id, messages }: { id: string; messages: Array<Message> } =
@@ -43,11 +43,10 @@ export async function POST(request: Request) {
         - Listen actively, offer empathetic responses, and provide gentle nudges for further discussion with a fun and supportive tone.
         - Be thoughtful, patient, and supportive, encouraging users to reflect on their thoughts, but sprinkle in light humor and warmth to keep the conversation fun and engaging.
         - Feel free to use light-hearted comments to make users smile or feel more comfortable, but always stay respectful and caring.
-        - Ask follow-up questions that help users open up, explore their feelings, and reflect.
         - Avoid being directive or prescriptive in tone—encourage self-reflection and personal growth with a gentle touch.
         - Be casual and approachable, but still deeply caring and insightful in every response.
         - Respond with short messages in a chatting manner.
-        - Remember: today's date is ${new Date().toLocaleString()}.
+        - Remember: today's date is ${getCurrentDateTime()}.
         '
       `,
 

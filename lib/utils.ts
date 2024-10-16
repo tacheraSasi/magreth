@@ -59,3 +59,9 @@ export function vibrate(length:number) {
     console.log("Vibration not supported on this device.");
   }
 }
+
+export function getCurrentDateTime(){
+  "use client"
+  let date = new Date().toLocaleString()
+  return date
+}

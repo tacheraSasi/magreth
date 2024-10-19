@@ -18,6 +18,8 @@ import { PreviewAttachment } from "./preview-attachment";
 import { Button } from "../ui/button";
 import { Textarea } from "../ui/textarea";
 import { playSound, vibrate } from "@/lib/utils";
+import { Mic, X } from "lucide-react";
+import SpeechToText from "./SpeechToText";
 
 const suggestedActions = [
   {
@@ -63,6 +65,8 @@ export function MultimodalInput({
   ) => void;
 }) {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
+  const [openSTT,setOpenSTT] = useState<Boolean>(false)
+  
 
   useEffect(() => {
     if (textareaRef.current) {
@@ -148,7 +152,10 @@ export function MultimodalInput({
   );
 
   return (
+    <>
+    
     <div className="relative w-full flex flex-col gap-4">
+      
       {messages.length === 0 &&
         attachments.length === 0 &&
         uploadQueue.length === 0 && (
@@ -180,7 +187,9 @@ export function MultimodalInput({
             ))}
           </div>
         )}
-
+        {openSTT && 
+          <SpeechToText setInput={setInput}/>
+        }
       <input
         type="file"
         className="fixed -top-4 -left-4 size-0.5 opacity-0 pointer-events-none"
@@ -253,9 +262,37 @@ export function MultimodalInput({
           <ArrowUpIcon size={14} />
         </Button>
       )}
+      {!openSTT ? 
+      (<Button
+      className="rounded-full p-1.5 h-fit absolute bottom-2 hover:border-x-indigo-500 right-10 m-0.5 dark:border-zinc-700"
+      onClick={(event) => {
+        event.preventDefault();
+          setOpenSTT(true)
+        }}
+        variant="outline"
+        disabled={isLoading}
+        >
+       <Mic size={14} />
+      </Button>
+      ):
+      (
+        <Button
+      className="rounded-full p-1.5 h-fit absolute bottom-2 hover:border-x-indigo-500 right-10 m-0.5 dark:border-zinc-700"
+      onClick={(event) => {
+        event.preventDefault();
+          setOpenSTT(false)
+        }}
+        variant="outline"
+        disabled={isLoading}
+        >
+       <X size={14} />
+      </Button>
+      )}
 
-      {/* <Button
-        className="rounded-full p-1.5 h-fit absolute bottom-2 right-10 m-0.5 dark:border-zinc-700"
+
+
+      <Button
+        className="rounded-full p-1.5 h-fit absolute bottom-2 right-16 my-0.5 mx-2 dark:border-zinc-700"
         onClick={(event) => {
           event.preventDefault();
           fileInputRef.current?.click();
@@ -264,7 +301,13 @@ export function MultimodalInput({
         disabled={isLoading}
       >
         <PaperclipIcon size={14} />
-      </Button> */}
+      </Button>
+      
+    
     </div>
+
+    
+
+    </>
   );
 }

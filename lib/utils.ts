@@ -1,5 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+// import { auth } from "@/app/(auth)/auth";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -65,3 +66,9 @@ export function getCurrentDateTime(){
   let date = new Date().toLocaleString()
   return date
 }
+
+export function speechToText(){
+
+}
+
+

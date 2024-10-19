@@ -9,14 +9,25 @@ interface SpeechToTextProps {
 }
 
 const SpeechToText: React.FC<SpeechToTextProps> = ({ setInput }) => {
+  // Detect the browser
+  const isFirefox = typeof navigator !== "undefined" && navigator.userAgent.toLowerCase().includes("firefox");
+  console.log("browser",navigator.userAgent.toLowerCase())
   const startSpeechRecognition = () => {
+    if (isFirefox) {
+      // Handle unsupported browser (Firefox)
+      setInput("hi magreth");
+      toast.error("Speech recognition is not supported in Firefox.");
+      console.error('Speech recognition is not supported in Firefox.');
+      return;
+    }
+
     console.log("starting stt");
 
     // Checking if browser supports SpeechRecognition or webkitSpeechRecognition
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
-      setInput("hi magreth")
-      toast.error("Speech recognition is not supported in this browser.")
+      setInput("hi magreth");
+      toast.error("Speech recognition is not supported in this browser.");
       console.error('Speech recognition is not supported in this browser.');
       return;
     }
@@ -34,7 +45,7 @@ const SpeechToText: React.FC<SpeechToTextProps> = ({ setInput }) => {
     };
 
     recognition.onerror = function(event: any) {
-      setInput("hi magreth")
+      setInput("hi magreth");
       console.error('Speech recognition error:', event.error);
     };
   };

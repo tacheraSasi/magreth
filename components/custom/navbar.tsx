@@ -13,7 +13,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
-import { LogOut, UserRound } from "lucide-react";
+import { Bolt, LogOut, UserRound } from "lucide-react";
 
 export const Navbar = async () => {
   let session = await auth();
@@ -55,6 +55,10 @@ export const Navbar = async () => {
             <DropdownMenuContent align="end">
               <DropdownMenuItem>
                 <ThemeToggle />
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Bolt /> 
+                Settings
               </DropdownMenuItem>
               <DropdownMenuItem className="p-1 z-50">
                 <form

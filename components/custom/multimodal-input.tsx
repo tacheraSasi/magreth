@@ -188,7 +188,7 @@ export function MultimodalInput({
           </div>
         )}
         {openSTT && 
-          <SpeechToText setInput={setInput}/>
+          <SpeechToText setInput={setInput} setOpenSTT={setOpenSTT}/>
         }
       <input
         type="file"

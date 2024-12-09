@@ -6,9 +6,10 @@ import { toast } from 'sonner';
 // Defining the props interface
 interface SpeechToTextProps {
   setInput: (input: string) => void;
+  setOpenSTT: (openSTT:boolean) => void;
 }
 
-const SpeechToText: React.FC<SpeechToTextProps> = ({ setInput }) => {
+const SpeechToText: React.FC<SpeechToTextProps> = ({ setInput, setOpenSTT }) => {
   // Detect the browser
   const isFirefox = typeof navigator !== "undefined" && navigator.userAgent.toLowerCase().includes("firefox");
 
@@ -26,6 +27,7 @@ const SpeechToText: React.FC<SpeechToTextProps> = ({ setInput }) => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
       setInput("hi magreth");
+      setOpenSTT(false)
       toast.error("Speech recognition is not supported in this browser.");
       console.error("Speech recognition is not supported in this browser.");
       return;
@@ -40,10 +42,12 @@ const SpeechToText: React.FC<SpeechToTextProps> = ({ setInput }) => {
     recognition.onresult = function (event: any) {
       const transcript = event.results[0][0].transcript;
       console.log("You said: ", transcript);
+      setOpenSTT(false)
       setInput(transcript); // Using setInput prop to pass the transcript
     };
 
     recognition.onerror = function (event: any) {
+      setOpenSTT(false)
       setInput("hi magreth");
       console.error("Speech recognition error:", event.error);
     };
